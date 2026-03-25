@@ -11,6 +11,9 @@ export const blueTheme = {
   jacketColor: "#0A2472",
   headerColor: "#0E6BA877",
   splashBg: "#03222f",
+  gradient: "linear-gradient(270deg, #03222f, #0E6BA8)",
+  gradientSize: "600% 600%",
+  transition: "all 0.4s ease-in-out",
 };
 
 export const brownTheme = {

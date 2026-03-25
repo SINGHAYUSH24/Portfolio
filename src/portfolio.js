@@ -5,6 +5,9 @@ import lpu_logo from "../src/assets/images/lpu_logo.png";
 import nptel from "../src/assets/images/nptel_logo.png";
 import coursera from "../src/assets/images/coursera_logo.png";
 import cipher from "../src/assets/images/cipher_logo.png";
+import libgen from "../src/assets/images/libgen.png";
+import netpay from "../src/assets/images/netpay.png";
+import multicore from "../src/assets/images/multicore.png";
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
@@ -31,7 +34,7 @@ const greeting = {
     "A passionate full-stack developer who enjoys building end-to-end products, designing scalable systems, and delivering sustainable technical solutions that create real-world impact.",
   resumeLink:
     "https://drive.google.com/file/d/11-EBaNTusMLjdBbRdtO8LIN8YMqGdQoD/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
+  portfolio_repository: "https://github.com/SINGHAYUSH24/Portfolio",
   githubProfile: "https://github.com/SINGHAYUSH24",
 };
 
@@ -220,7 +223,6 @@ const competitiveSites = {
     },
   ],
 };
-
 const degrees = {
   degrees: [
     {
@@ -294,6 +296,13 @@ const certifications = {
         "https://www.coursera.org/account/accomplishments/verify/7V80IJUDDQ1V",
       alt_name: "Google",
       color_code: "#0C9D5899",
+    },{
+      title: "The Bits and Bytes of Computer Networking",
+      subtitle: "-Coursera",
+      logo_path: coursera,
+      certificate_link:"https://coursera.org/verify/ZTUHSN0MHU4X",
+      alt_name: "Google",
+      color_code: "#0C9D5899",
     },
     {
       title: "MERN STACK WEB DEVELOPMENT ",
@@ -317,7 +326,7 @@ const projects = {
   projectList: [
     {
       status: "Completed",
-      version: "1.2.2",
+      version: "V 1.2.2",
       title: "LibGen",
       subtitle:
         "A Centralized Hub for Storing and Retrieving Library Resources",
@@ -337,7 +346,54 @@ const projects = {
       ],
       github: "https://github.com/SINGHAYUSH24/LibGen",
       liveLink: "https://libgen-rouge.vercel.app/",
+      imagesrc: libgen
     },
+    {
+      status: "Ongoing",
+      version: "V 1.0.1",
+      title: "NetPay",
+      subtitle:
+        "An Internet Based Banking and Fund Transfer Web Application",
+      skills: [
+        "React.js",
+        "SpringBoot",
+        "JavaScript",
+        "PostgreSQL",
+        "Rest API",
+        "Tailwind",
+      ],
+      features: [ "Secure money transfer simulation via account number, mobile number, and UPI ID with transaction PIN verification",
+"Real-time balance updates and transaction history tracking across multiple user-created accounts",
+"QR code-based payment system for quick and seamless transactions using integrated scanner functionality",
+"Comprehensive dashboard with account management, transaction insights, and multi-account support"
+        
+      ],
+      github: "https://github.com/SINGHAYUSH24/Virtual_Banking",
+      liveLink: "https://libgen-rouge.vercel.app/",
+      imagesrc: netpay
+    },
+    {
+      status: "Completed",
+      version: "V 1.0.1",
+      title: "Multicore Scheduler",
+      subtitle:
+        "A Web Based Multicore Process Scheduler",
+      skills: [
+        "HTML",
+        "JavaScript",
+        "Operating System",
+        "Data Structures",
+        "Tailwind",
+      ],
+      features: [ "Designed and developed a web-based multicore CPU scheduling simulator to model task execution, priority-based scheduling, and core utilization.",
+        "Added dynamic task preemption, automatic task reassignment on idle cores, and Gantt chart visualization for  execution analysis.",
+        "Improved scheduling efficiency using optimized data structures such as Binary Trees and Max Heaps for storing running and preempted tasks. ",
+        "Implements Priority-based Preemtive Scheduling"
+      ],
+      github: "https://github.com/SINGHAYUSH24/Multicore_Scheduler",
+      liveLink: "https://singhayush24.github.io/Multicore_Scheduler/",
+      imagesrc: multicore
+    }
   ],
 };
 const publicationsHeader = {

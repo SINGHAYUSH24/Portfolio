@@ -71,7 +71,7 @@ const LeetcodeCard = () => {
         <div className="leetcode-card__difficulties">
           <div className="leetcode-card__diff">
             <div className="leetcode-card__diff-header">
-              <span className="leetcode-card__diff-label text-stat-green">EASY</span>
+              <span className="leetcode-card__diff-label-green">EASY</span>
               <span className="leetcode-card__diff-count">{easy.solved} / {easy.total}</span>
             </div>
             <div className="leetcode-card__diff-bar">
@@ -80,7 +80,7 @@ const LeetcodeCard = () => {
           </div>
           <div className="leetcode-card__diff">
             <div className="leetcode-card__diff-header">
-              <span className="leetcode-card__diff-label text-stat-yellow">MEDIUM</span>
+              <span className="leetcode-card__diff-label-yellow">MEDIUM</span>
               <span className="leetcode-card__diff-count">{medium.solved} / {medium.total}</span>
             </div>
             <div className="leetcode-card__diff-bar">
@@ -89,7 +89,7 @@ const LeetcodeCard = () => {
           </div>
           <div className="leetcode-card__diff">
             <div className="leetcode-card__diff-header">
-              <span className="leetcode-card__diff-label text-stat-red">HARD</span>
+              <span className="leetcode-card__diff-label-red">HARD</span>
               <span className="leetcode-card__diff-count">{hard.solved} / {hard.total}</span>
             </div>
             <div className="leetcode-card__diff-bar">

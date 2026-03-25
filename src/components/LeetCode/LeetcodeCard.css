@@ -214,3 +214,18 @@
 .leetcode-card__link:hover {
   background: hsl(var(--text-light-blue) / 0.1);
 }
+.leetcode-card__diff-label-green{
+  color:rgb(26, 204, 10);
+  font-size: larger;
+  font-weight: 800;
+}
+.leetcode-card__diff-label-yellow{
+  color:rgb(196, 225, 67);
+  font-size: larger;
+  font-weight: 800;
+}
+.leetcode-card__diff-label-red{
+  color:rgb(194, 71, 15);
+  font-size: larger;
+  font-weight: 800;
+}

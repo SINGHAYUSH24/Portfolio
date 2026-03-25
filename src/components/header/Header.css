@@ -4,6 +4,7 @@
   max-width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
+  background:inherit;
 }
 
 /* remove default list styles */
@@ -42,6 +43,7 @@
 /* menu base */
 .menu {
   font-family: "Google Sans Regular";
+  background: inherit;
 }
 
 /* mobile menu (collapsed) */

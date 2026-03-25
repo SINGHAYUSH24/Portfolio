@@ -64,6 +64,7 @@ export default function Greeting(props) {
                 src={profile}
                 height={200}
                 width={500}
+                style={{border:`4px solid ${theme.text}`,borderRadius:'250px'}}
               ></img>
             }
           </div>

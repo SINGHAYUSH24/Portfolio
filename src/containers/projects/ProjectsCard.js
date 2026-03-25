@@ -31,13 +31,13 @@ const ProjectCard = ({
   features,
   github,
   liveLink,
+  imagesrc
 }) => {
   return (
     <div className="project-card">
       <div className="project-card__preview">
         <div className="project-card__preview-inner">
-          <div className="project-card__preview-title">{title}</div>
-          <div className="project-card__preview-subtitle">{subtitle}</div>
+          <img src={imagesrc}></img>
         </div>
       </div>
 

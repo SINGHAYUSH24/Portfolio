@@ -50,20 +50,10 @@ body {
   overflow-x: hidden;
 }
 body {
-  margin: 0px;
   font: 19px / 23px Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 0px;
   width: 100%;
-}
-html {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-#root {
-  padding: 0px;
 }
 /* Media Query */
 @media (max-width: 1380px) {

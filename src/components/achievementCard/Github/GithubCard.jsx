@@ -4,6 +4,7 @@ import React from "react";
 const languages = [
   { name: "HTML", color: "hsl(0, 75%, 55%)", repos: 6 },
   { name: "JavaScript", color: "hsl(50, 90%, 55%)", repos: 5 },
+  { name: "Java", color: "hsl(145, 81%, 25%)", repos: 1},
   { name: "PHP", color: "hsl(210, 70%, 55%)", repos: 1 },
 ];
 const maxRepos = Math.max(...languages.map((l) => l.repos));

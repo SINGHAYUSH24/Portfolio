@@ -7,18 +7,18 @@ import SeoHeader from "../seoHeader/SeoHeader";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
-  el.style.backgroundColor = color;
+  el.style.color = color;
 };
 
-const onMouseOut = (event) => {
+const onMouseOut = (event,color) => {
   const el = event.target;
-  el.style.backgroundColor = "transparent";
+  el.style.color = color;
 };
 
 class Header extends Component {
   render() {
-    const theme = this.props.theme;
     const link = settings.isSplash ? "/splash" : "home";
+    const theme = this.props.theme;
     return (
       <Fade top duration={1000} distance="20px">
         <SeoHeader />
@@ -35,7 +35,7 @@ class Header extends Component {
             <label className="menu-icon" htmlFor="menu-btn">
               <span className="navicon"></span>
             </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
+            <ul className="menu" style={{ }}>
               <li>
                 <NavLink
                   to="/home"
@@ -43,7 +43,7 @@ class Header extends Component {
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onMouseOut={(event) => onMouseOut(event,theme.text)}
                 >
                   Home
                 </NavLink>
@@ -55,7 +55,7 @@ class Header extends Component {
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onMouseOut={(event) => onMouseOut(event,theme.text)}
                 >
                   Education
                 </NavLink>
@@ -67,7 +67,7 @@ class Header extends Component {
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onMouseOut={(event) => onMouseOut(event,theme.text)}
                 >
                   Projects
                 </NavLink>
@@ -79,7 +79,7 @@ class Header extends Component {
                   activeStyle={{ fontWeight: "bold" }}
                   style={{ color: theme.text }}
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
+                  onMouseOut={(event) => onMouseOut(event,theme.text)}
                 >
                   Contact Me
                 </NavLink>

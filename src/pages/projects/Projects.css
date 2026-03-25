@@ -1,13 +1,13 @@
 .projects-main {
   width: 100%;
   text-align: center;
+  margin-bottom:10px;
 }
 
-.basic-projects {
-  margin-left: 5%;
-  margin-right: 5%;
+.repo-cards-div-main{
+  display: flex;
+  justify-content: center;
 }
-
 .projects-heading-div {
   display: flex;
 }
