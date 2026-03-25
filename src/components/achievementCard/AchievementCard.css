@@ -1,0 +1,42 @@
+.card-image {
+  object-fit: fill;
+  width: 100%;
+  min-height: 300px;
+}
+.certificate-card {
+  background: #03222f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px 0px rgb(23, 126, 147);
+  margin-bottom: 25px;
+}
+.certificate-card:hover {
+  background: #03222f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px 0px rgb(23, 126, 147);
+  margin-bottom: 25px;
+}
+.card-title {
+  color: #27b8a2;
+}
+.certificate-card-footer {
+  background: yellow;
+  border: 2px solid white;
+  border-radius: 50px;
+  max-width: 50%;
+  min-width: 50%;
+  text-align: center;
+  margin: 5px;
+  cursor: pointer;
+}
+.certificate-card-footer:active {
+  background: rgb(151, 111, 19);
+}
+a {
+  text-decoration: none;
+}

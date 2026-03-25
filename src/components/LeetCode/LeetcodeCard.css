@@ -1,0 +1,216 @@
+.leetcode-card {
+  background: hsl(var(--card-dark));
+  border: 1px solid hsl(var(--card-dark-inner));
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 100%;
+  box-shadow: 10px 10px 10px rgb(3, 82, 116);
+}
+
+.leetcode-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.leetcode-card__profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.leetcode-card__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  background: hsl(var(--card-dark-inner));
+}
+
+.leetcode-card__name {
+  color: hsl(var(--text-light-blue));
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.leetcode-card__domain {
+  color: hsl(var(--text-orange));
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.leetcode-card__live {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: hsl(var(--text-green));
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.leetcode-card__live-dot {
+  width: 8px;
+  height: 8px;
+  background: hsl(var(--text-green));
+  border-radius: 50%;
+  animation: pulse-dot-lc 2s infinite;
+}
+
+@keyframes pulse-dot-lc {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.leetcode-card__main {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.leetcode-card__donut-wrap {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.leetcode-card__donut-svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.leetcode-card__donut-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.leetcode-card__donut-value {
+  color: hsl(var(--text-light-blue));
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.leetcode-card__donut-text {
+  color: hsl(var(--text-light-blue) / 0.5);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0.2rem;
+}
+
+.leetcode-card__difficulties {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leetcode-card__diff {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.leetcode-card__diff-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leetcode-card__diff-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.leetcode-card__diff-count {
+  color: hsl(var(--text-light-blue) / 0.5);
+  font-size: 0.75rem;
+}
+
+.leetcode-card__diff-bar {
+  height: 5px;
+  background: hsl(var(--card-dark-inner));
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.leetcode-card__diff-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1s ease;
+}
+
+.leetcode-card__bottom-stats {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.leetcode-card__bottom-stat {
+  flex: 1;
+  background: hsl(var(--card-dark-inner));
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.leetcode-card__bottom-stat-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: hsl(var(--text-light-blue) / 0.5);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.leetcode-card__bottom-stat-value {
+  color: hsl(var(--text-light-blue));
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.leetcode-card__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.875rem;
+  background: hsl(var(--card-dark-inner));
+  border: 1px solid hsl(var(--text-light-blue) / 0.15);
+  border-radius: 0.75rem;
+  color: hsl(var(--text-light-blue));
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.leetcode-card__link:hover {
+  background: hsl(var(--text-light-blue) / 0.1);
+}

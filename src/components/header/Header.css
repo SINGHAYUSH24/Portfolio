@@ -1,0 +1,141 @@
+/* header */
+
+.header {
+  max-width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+}
+
+/* remove default list styles */
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.grey-color {
+  color: #868e96;
+}
+
+/* links */
+.header li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* logo */
+.header .logo {
+  display: block;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: 10px;
+  line-height: normal;
+}
+
+.header .logo-name {
+  font-family: "Agustina Regular";
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* menu base */
+.menu {
+  font-family: "Google Sans Regular";
+}
+
+/* mobile menu (collapsed) */
+.header .menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* menu icon (hamburger) */
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* hamburger lines */
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu toggle checkbox */
+.header .menu-btn {
+  display: none;
+}
+
+/* open menu */
+.header .menu-btn:checked ~ .menu {
+  max-height: 370px;
+}
+
+/* animate hamburger to X */
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before,
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  top: 0;
+}
+
+/* DESKTOP VIEW */
+@media (min-width: 69em) {
+  .header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* horizontal menu */
+  .header .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-height: none;
+  }
+
+  /* remove hamburger */
+  .header .menu-icon {
+    display: none;
+  }
+}
