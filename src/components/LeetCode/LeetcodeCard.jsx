@@ -1,9 +1,9 @@
 import { Zap, TrendingUp, Globe, ExternalLink, Trophy } from "lucide-react";
 import "./LeetcodeCard.css";
 import React from "react";
-const total = 107;
-const easy = { solved: 31, total: 933 };
-const medium = { solved: 69, total: 2029 };
+const total = 111;
+const easy = { solved: 33, total: 933 };
+const medium = { solved: 71, total: 2029 };
 const hard = { solved: 7, total: 916 };
 
 const circumference = 2 * Math.PI * 45;

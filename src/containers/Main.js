@@ -8,6 +8,7 @@ import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 import ResumePage from "../pages/resume/Resume.js";
 import ContactSection from "../pages/contact/ContactSection.jsx";
+import Skills from "./skills/Skills.js";
 
 export default class Main extends Component {
   componentDidMount() {
@@ -53,8 +54,9 @@ export default class Main extends Component {
               <Education {...props} theme={this.props.theme} />
             )}
           />
-          <Route path="/contact" render={() => <ContactSection />} />
 
+          <Route path="/contact" render={() => <ContactSection />} />
+          <Route path="/skills" render={(props)=>(<Skills theme={this.props.theme}/>)}></Route>
           {settings.isSplash && (
             <Route
               path="/splash"

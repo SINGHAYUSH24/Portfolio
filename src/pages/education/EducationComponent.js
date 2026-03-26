@@ -12,6 +12,7 @@ import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
 import GithubCard from "../../components/achievementCard/Github/GithubCard";
+import Skills from "../../containers/skills/Skills";
 
 class Education extends Component {
   render() {
@@ -41,6 +42,7 @@ class Education extends Component {
             </div>
           </Fade>
           <Educations theme={this.props.theme} />
+          <Skills {...this.props}/>
           {certifications.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />
           ) : null}

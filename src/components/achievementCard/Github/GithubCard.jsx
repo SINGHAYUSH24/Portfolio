@@ -40,7 +40,7 @@ const GithubCard = () => {
           <div className="github-card__stat-icon">
             <Code2 className="w-5 h-5 mx-auto" />
           </div>
-          <div className="github-card__stat-value">91</div>
+          <div className="github-card__stat-value">94</div>
           <div className="github-card__stat-label">Contributions</div>
         </div>
         <div className="github-card__stat">

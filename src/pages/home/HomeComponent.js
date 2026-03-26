@@ -11,7 +11,6 @@ class Home extends Component {
       <div>
         <Header theme={this.props.theme} />
         <Greeting theme={this.props.theme} />
-        <Skills theme={this.props.theme} />
         <TopButton theme={this.props.theme} />
       </div>
     );
